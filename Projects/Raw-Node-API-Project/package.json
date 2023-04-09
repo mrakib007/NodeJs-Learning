@@ -5,7 +5,8 @@
   "license": "MIT",
 
   "scripts": {
-    "start": "NODE_ENV=staging index",
-    "production": "NODE_ENV=production index"
+    "start": "SET \"NODE_ENV=staging\" && node index",
+    "production": "SET \"NODE_ENV=production\" && node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
