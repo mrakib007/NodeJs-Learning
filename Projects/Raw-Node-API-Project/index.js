@@ -8,9 +8,26 @@ const data = require('./lib/data');
 //app object - module scaffolding
 const app = {};
 
-data.create('test','newFile',{'name':'Bangladesh','language':'Bangla'},(error)=>{
-    console.log(`error was`,error);
+//data create
+// data.create('test','newFile',{'name':'Bangladesh','language':'Bangla'},(error)=>{
+//     console.log(`error was`,error);
+// })
+
+//data read
+// data.read('test','newFile',(error,result)=>{
+//     console.log(error,result);
+// })
+
+//data update
+// data.update('test','newFile',{'name': 'Germany','language': 'German'},(error)=>{
+//     console.log(error);
+// })
+
+//data delete
+data.delete('test','newFile',(error)=>{
+    console.log(error);
 })
+
 //create server
 app.createServer = () =>{
     const server = http.createServer(app.handleReqRes);
