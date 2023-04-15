@@ -24,9 +24,9 @@ const app = {};
 // })
 
 //data delete
-data.delete('test','newFile',(error)=>{
-    console.log(error);
-})
+// data.delete('test','newFile',(error)=>{
+//     console.log(error);
+// })
 
 //create server
 app.createServer = () =>{

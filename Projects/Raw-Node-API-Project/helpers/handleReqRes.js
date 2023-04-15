@@ -41,11 +41,12 @@ handler.handleReqRes = (req, res) => {
       const payLoadString = JSON.stringify(payload);
   
       //return the final response
+      res.setHeader('Content-Type','application/json');
       res.writeHead(statusCode);
       res.end(payLoadString);
     });
     //response handle
-    res.end("hello world");
+    // res.end("hello world");
   });
 };
 module.exports = handler;
